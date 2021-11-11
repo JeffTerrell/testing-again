@@ -1,17 +1,17 @@
-import Date from '../src/js/date.js';
+import Jeff from '../src/js/date.js';
 
-describe('Date', () => {
+describe('Jeff', () => {
 
 
 
 test('should correctly create a date object with user inputted date', () => {
-  const date = new Date("1983-07-20");
-  expect(date.userDate).toEqual("1983-07-20");  
+  const date = new Jeff('July 20, 1983');
+  expect(date.userDate).toEqual('July 20, 1983');  
   });
 
 test('should correctly return the day of the week based on user inputted date', () => {
-  const date = new Date("1983-07/20");
-  expect(date.getDay).toEqual("Wednesday");
-  })  
+  const date = new Jeff('July 20, 1983');
+  expect(date.getSomething()).toEqual(3);
+  });
 });
 

@@ -1,10 +1,11 @@
-export default class Date {
-  constructor(date) {
-    this.userDate = date;
+export default class Jeff {
+  constructor(input) {
+    this.userDate = input;
   }
 
-  getDay() {
-    // const day = this.userDate.getDay();
-    // return day;
+  getSomething() {
+    let day1 = new Date(this.userDate);
+    let day2 = day1.getDay();
+    return day2;
   }
 }
